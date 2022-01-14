@@ -81,13 +81,14 @@ body{
      display: flex;
      justify-content: center;
  }
- button{
+ #login-form-submit{
      margin-top: 20px;
-     padding: 10px;
+     padding:10px 30px;
      font-size: 20px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     border-radius: 35%;
+     border-radius: 30px;
      border: none;
+     cursor: pointer;
 
  }
  .Forget-pass{
@@ -98,11 +99,114 @@ body{
  .fp{
      text-decoration: underline;
      color: blue;
-     cursor:pointer;
+     cursor: pointer;
  }
 
  ::selection{
      color: violet;
      background-color: gray;
  }
- 
+ #login-form-submit:hover{
+     
+     background-color: rgb(134, 199, 199);
+     
+ }
+ html{
+     height: 100%;
+ }
+
+ footer {
+     margin-top: auto;
+    position:absolute;
+    width:100%;
+    min-height: 200px;  /* Height of the footer */
+    background:rgb(160, 185, 223) ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+
+ .icon{
+     padding: 15px;
+     background: #000;
+     border-radius: 55%;
+     transition: .6s ease-in; 
+ }
+#footer{
+    padding: 30px;
+    
+}
+ .icon:hover{
+     background-color: whitesmoke;
+ }
+ .fa-instagram{
+     color: #e84393;
+ }
+ .fa-twitter{
+     color: #0097e6;
+ }
+ .fa-facebook{
+     color: blue;
+     
+ }
+
+ .fa-linkedin{
+    color: #0097e6;
+ }
+
+.ad-part{
+    padding: 15px;
+}
+span{
+    color: red;
+    font-size:20px;
+    font-family: monospace;
+}
+
+
+
+
+ /* about.html */
+
+ .about-us{
+     border: 1px solid red;
+     padding: 300px;
+     margin: 30px 20px;
+     text-align: center;
+     background-color: whitesmoke;
+ }
+
+ .content{
+     font-size: 16px;
+     font-family: fantasy;
+ }
+ .heading{
+    font-family: 'Anton', sans-serif;
+ }
+.about{
+    font-family:Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #1a1b1f;
+}
+word{
+    color: red;
+}
+.btn-start{
+    border: 1px solid black;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(250, 65, 65);
+    color: white;
+    cursor: pointer;
+}
+.btn-start:hover{
+    color: lightseagreen;
+}
+
