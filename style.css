@@ -98,9 +98,11 @@ body{
  .fp{
      text-decoration: underline;
      color: blue;
+     cursor:pointer;
  }
 
  ::selection{
      color: violet;
      background-color: gray;
  }
+ 
