@@ -1,212 +1,348 @@
-body{
+body { 
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 217, 175);
+  box-sizing: border-box;
+}
+
+li,
+a {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: rgb(59, 52, 52);
+}
+.logo {
+  clip-path: circle();
+  width: 60px;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: rotateZ(-30deg);
+}
+.nav-link {
+  list-style: none;
+}
+.nav-link li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-link li a {
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.6s ease-in;
+}
+.nav-link li a:hover {
+  background-color: rgb(209, 101, 101);
+}
+
+marquee {
+  background-color: rgb(125, 248, 152);
+  padding: 9px;
+}
+marquee:hover {
+  background-color: honeydew;
+  text-shadow: 1px 1px 2px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 200px;
+  margin: 10px 500px;
+  background-color: rgb(14, 231, 122) ;
+}
+label {
+  font-family: monospace;
+  font-size: 15px;
+}
+#email,
+#password {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: currentColor;
+}
+#email,
+#password:hover {
+  border: green;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+#login-form-submit {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: .6s;
+  
+}
+.Forget-pass {
+  font-family: cursive;
+  text-align: center;
+  font-size: 17px;
+}
+.fp {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+::selection {
+  color: violet;
+  background-color: gray;
+}
+#login-form-submit:hover {
+  background-color: rgb(226, 97, 46);
+}
+html {
+  height: 100%;
+}
+
+.google{
+   color: rgb(245, 148, 3);
+   background-color: blueviolet;
+   padding:20px 10px 10px;
+   border-radius: 55%;
+   transition: .6s;
+   
+}
+.github{
+    color: black;
+    background-color: blueviolet;
+    padding:20px 10px 10px;
+    border-radius: 55%;
+    transition: .6s;
+}
+.facebook{
+    background-color:blueviolet;
+    padding: 20px 10px 10px 10px;
+    border-radius: 55%;
+    transform: .6s;
+}
+
+.social-login{
+    text-align: center;
+}
+.google:hover{
+   background-color: floralwhite;
+}
+.github:hover{
+    background-color: floralwhite;
+ }
+ .facebook:hover{
+    background-color: floralwhite;
+ }
+    footer {
+  margin-top: auto;
+  
+  width: 100%;
+  min-height: 200px; /* Height of the footer */
+  background: rgb(160, 185, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+.icon {
+  padding: 15px;
+  background: #000;
+  border-radius: 55%;
+  transition: 0.6s ease-in;
+}
+#footer {
+  padding: 30px;
+}
+.icon:hover {
+  background-color: whitesmoke;
+}
+.fa-instagram {
+  color: #e84393;
+}
+.fa-twitter {
+  color: #0097e6;
+}
+.fa-facebook {
+  color: blue;
+}
+
+.fa-linkedin {
+  color: #0097e6;
+}
+
+.ad-part {
+  padding: 15px;
+}
+span {
+  color: red;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/* about.html */
+
+.about-us {
+  border: 1px solid red;
+  padding: 300px;
+  margin: 30px 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.content {
+  font-size: 16px;
+  font-family: fantasy;
+}
+.heading {
+  font-family: "Anton", sans-serif;
+}
+.about {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #1a1b1f;
+}
+word {
+  color: red;
+}
+.btn-start {
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: rgb(250, 65, 65);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-start:hover {
+  color: lightseagreen;
+}
+
+/* product.html */
+
+h3{
+    text-align: center;
+    font-size: 30px;
     margin: 0;
-    padding: 0;
-    background-color:wheat;
-    box-sizing: border-box;
-    
-    
+    padding-top: 10px;
 }
-
- li,a{
-     font-family: sans-serif;
-     font-weight: 500;
-     color: white;
-     font-size: 16px;
-     text-decoration: none;
- }
- header{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 20px 10%;
-     background-color: rgb(59, 52, 52);
- }
- img{
-     clip-path: circle();
-     width: 60px;
-     cursor: pointer;
- }
- img:hover{
-     transform: rotateZ(-30deg);
-     
- }
- .nav-link{
-     list-style: none;
- }
- .nav-link li{
-     display: inline-block;
-     padding: 0px 20px;
-     
- }
- .nav-link li a{
-     padding: 10px;
-     border-radius: 5px;
-     transition: .6s ease-in;
- }
- .nav-link li a:hover{
-     background-color: rgb(209, 101, 101);
-     
-     
- }
-
- marquee{
-     background-color: rgb(125, 248, 152);
-     padding: 9px;
- }
- marquee:hover{
-     background-color: honeydew;
-     text-shadow: 1px 1px 2px;
- }
-
- .login-form{
-     display: flex;
-     justify-content: center;
-     border: 1px solid red;
-     padding: 200px;
-     margin: 10px 500px;
-     background-color: rgb(14, 231, 122);
- }
- label{
-     font-family:monospace;
-     font-size: 15px;
- }
- #email,#password{
-     margin-top: 5px;
-     padding: 10px;
-     border-radius: 10px;
-     border: currentColor;
-     
- }
- .button{
-     display: flex;
-     justify-content: center;
- }
- #login-form-submit{
-     margin-top: 20px;
-     padding:10px 30px;
-     font-size: 20px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     border-radius: 30px;
-     border: none;
-     cursor: pointer;
-
- }
- .Forget-pass{
-     font-family: cursive;
-     text-align: center;
-     font-size: 17px;
- }
- .fp{
-     text-decoration: underline;
-     color: blue;
-     cursor: pointer;
- }
-
- ::selection{
-     color: violet;
-     background-color: gray;
- }
- #login-form-submit:hover{
-     
-     background-color: rgb(134, 199, 199);
-     
- }
- html{
-     height: 100%;
- }
-
- footer {
-     margin-top: auto;
-    position:absolute;
-    width:100%;
-    min-height: 200px;  /* Height of the footer */
-    background:rgb(160, 185, 223) ;
+.cards{
     display: flex;
-    justify-content:center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
- }
+    margin: 50px 0;
+}
+.card1{
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 14px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.22);
+    transition: .4s;
+    background:white;
 
- .icon{
-     padding: 15px;
-     background: #000;
-     border-radius: 55%;
-     transition: .6s ease-in; 
- }
-#footer{
-    padding: 30px;
+}
+.card1:hover{
+    transform: translate(0,-8px);
+}
+.airpods{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+h6{
+    font-size: 25px;
+    color: #222f30;
+    text-align: center;
+}
+ul{
+    display: flex;
+    /* background: rgba(236, 9, 9, 0.931); */
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    list-style: none;
+    
     
 }
- .icon:hover{
-     background-color: whitesmoke;
- }
- .fa-instagram{
-     color: #e84393;
- }
- .fa-twitter{
-     color: #0097e6;
- }
- .fa-facebook{
-     color: blue;
-     
- }
-
- .fa-linkedin{
-    color: #0097e6;
- }
-
-.ad-part{
+li{
+    padding: 5px;
+}
+.checked{
+    color: yellow;
+}
+.fa-star{
+    margin-bottom :50px;
+}
+.unchecked{
+    color: black;
+}
+.bn{
+    text-align: center;
+    font-size: 25px;
+    color:black;
+    width: 100%;
     padding: 15px;
-}
-span{
-    color: red;
-    font-size:20px;
-    font-family: monospace;
-}
-
-
-
-
- /* about.html */
-
- .about-us{
-     border: 1px solid red;
-     padding: 300px;
-     margin: 30px 20px;
-     text-align: center;
-     background-color: whitesmoke;
- }
-
- .content{
-     font-size: 16px;
-     font-family: fantasy;
- }
- .heading{
-    font-family: 'Anton', sans-serif;
- }
-.about{
-    font-family:Montserrat, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #1a1b1f;
-}
-word{
-    color: red;
-}
-.btn-start{
-    border: 1px solid black;
-    padding: 10px 30px;
-    font-weight: 500;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-size: 20px;
-    border-radius: 30px;
-    background-color: rgb(250, 65, 65);
-    color: white;
+    border: 0;
+    margin-top: 5px;
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px;
+    transition: .6s;
     cursor: pointer;
 }
-.btn-start:hover{
-    color: lightseagreen;
+.buy-1:hover{
+    background: #222f30;
+    color: white;
 }
-
+.buy-2:hover{
+    background: #222f30;
+    color: white;
+}
+.buy-3:hover{
+    background: #222f30;
+    color: white;
+}
+.buy-4:hover{
+    background: #222f30;
+    color: white;
+}
+.buy-5:hover{
+    background: #222f30;
+    color: white;
+}
+.buy-6:hover{
+    background: #222f30;
+    color: white;
+}
+.buy-7:hover{
+    background: #222f30;
+    color: white;
+}
